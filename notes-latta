@@ -1,0 +1,50 @@
+# NOTES — Stanford Network Analysis Platform (SNAP) Fork
+
+## Why I forked this
+
+This repo is a fork of **SNAP (Stanford Network Analysis Platform)** — a widely used C++ library for network and graph analysis, capable of handling very large graphs and many structural algorithms. SNAP is a foundational tool in network science and graph mining, used in research and applied settings. :contentReference[oaicite:0]{index=0}
+
+I’m interested in how **network analysis techniques apply to trust, safety, and relationship systems**, especially when modeling behaviors such as attention flows, interaction networks, and signals of coordinated behavior in social/dating platforms.
+
+This fork is *for study and reflection* — to connect concrete graph analysis tools to integrity & risk signal thinking rather than to claim development ownership.
+
+## Core ideas in this codebase
+
+SNAP implements a large set of algorithms and utilities for network analysis, including: :contentReference[oaicite:1]{index=1}
+
+- Graph representations with node and edge attributes
+- Structural properties (e.g., centrality, connectivity, clustering)
+- Community detection and decomposition
+- Graph generation models (forest fire, preferential attachment)
+- Traversal, flow, and random walk algorithms
+- Graph mining examples and tutorials
+
+These elements point to core network analysis concepts that underlie relational systems. :contentReference[oaicite:2]{index=2}
+
+## Why this matters for trust & safety
+
+Understanding graph structure and dynamics is useful for trust and safety because:
+
+- **Risk propagation**: Harmful behavior often appears as patterns across interaction networks.
+- **Cluster/Community structure**: Identifying tightly connected groups can help spot coordinated malicious activity or support communities.
+- **Centrality and role**: Core nodes may represent highly active or influential users whose behavior merits deeper signal weighting.
+- **Evolution over time**: Structural changes in a network can reveal shifts in engagement or abuse patterns.
+
+Network science is not a silver bullet, but it offers lenses through which systems can be analyzed quantitatively.
+
+## What I’m exploring here
+
+- Which structural measures correlate with abuse risk vs normal interaction
+- How graph models (e.g., preferential attachment, community detection) reveal hubs of activity
+- How interaction networks differ between healthy vs harmful engagement
+- What network features could inform *risk signals* without inspecting message content
+
+## Next steps / open questions
+
+- How to bridge SNAP’s C++ performance focus with higher-level Python tooling (e.g., NetworkX, igraph) for rapid experimentation
+- How to define *meaningful* edge weights and node features in dating/intimacy platforms
+- How network properties can inform *progressive friction* or *priority review queues*
+
+## Attribution
+
+This fork is based on SNAP, originally created and maintained by the Stanford Network Analysis Project. SNAP remains available under its original license. :contentReference[oaicite:3]{index=3}
